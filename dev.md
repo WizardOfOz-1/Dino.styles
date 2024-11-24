@@ -1,18 +1,20 @@
 # Initialization: 
 
-<link rel="stylesheet" href="/home/nathan/dev/dino.css">
+<link rel="stylesheet" href="/home/nathan/Projects/dev/dino.css">
 
 ```java
+//
 public class main{
     public static void main(String []args){
         System.out.println("Hello World");
     }
+}
 ```
-==Replace== main with whatever the file is, eg, someshit.java `public class someshit`, (__NOTE: It Is Case Sensitive__)
+Replace main with whatever the file is, eg, someshit.java `public class someshit`, (__NOTE: It Is Case Sensitive__)
 
----
+--- 
 
-# 1) Tf Does `static` even do?  {#static}
+# Tf Does `static` even do?  {#static}
 
 - It states that "__this belongs to the class rather than any instance of the class.__"  
 - It is __shared across all instance of classes.__
@@ -36,7 +38,7 @@ public class main {
 }
 ```
 
-__Allows a method to be called without an object:__ {#objlmc}
+__Allows a method to be called without an object:__ 
 ```java
 class example { // Becomes default class example, if no access modifier is mentioned, default is implicit
     static int counter = 0;
@@ -116,8 +118,7 @@ public class main {
     }
 }
 ```
-> Printing an object implicitly calls the .toString() method. Think of it as the stringer interface in golang.
-This behaviour can be overridden, which is where it shines. 
+Printing an object implicitly calls the .toString() method. Think of it as the stringer interface in golang. This behaviour can be overridden, which is where it shines. 
 
 ``` java
 class someclass {
